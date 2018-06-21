@@ -1,11 +1,21 @@
 package ClassObj;
 
+import com.sun.org.apache.xpath.internal.operations.String;
+
 import java.util.Scanner;
 
 /**
  * Created by Anukul-PC on 28-05-2018.
  */
 public class HunamCreator {
+
+    private int legs;
+    private int hand;
+    private int face;
+    private String location;
+    private String gender;
+    private HumanModel humanModel;
+
 
     public Scanner s;
 
@@ -52,6 +62,11 @@ public class HunamCreator {
                     Humanlist = s_Humanlist.nextInt();
                     switch (Humanlist) {
                         case 1:
+                            //malerecord();
+                            break;
+                        case 2:
+                           // femalerecord();
+                            break;
                     }
                     break;
                 case 3:
@@ -64,36 +79,67 @@ public class HunamCreator {
         }
     }
 
+   //HunamCreator human[] = new HunamCreator[];
+    String human[] ;
+    String newItem;
+
+
+//    String temphuman[] = new String[newSize];
+
+
+
+
     void male() {
-        int l, h, f;
+        //int legs, hand, face;
         System.out.println("Enter the MaleParts");
         System.out.println("Enter the legs:");
-        l = s.nextInt();
+        legs = s.nextInt();
         System.out.println("Enter the hand:");
-        h = s.nextInt();
+        hand = s.nextInt();
         System.out.println("Enter the face:");
-        f = s.nextInt();
+        face = s.nextInt();
+        System.out.println("");
         System.out.println("Just Wait...Male will be created in few second..!!");
+
+//        humanModel = new HumanModel(legs, hand, face, location, gender);
+
+        System.out.println(humanModel.getLegs());
+        System.out.println(humanModel.getHand());
+        System.out.println(humanModel.getFace());
     }
 
-    void malerecord() {
-//        System.out.println("The leang is:"+l);
+    public void malerecord(int lengs, int hand, int face, String location, String gender) {
+        this.legs = lengs;
+        this.hand = hand;
+        this.face = face;
+        this.location = location;
+        this.gender = gender;
     }
 
     void female() {
-        int l, h, f;
+        //int legs, hand, face;
         System.out.println("Enter the femaleParts");
         System.out.println("Enter the leang:");
-        l = s.nextInt();
+        legs = s.nextInt();
         System.out.println("Enter the hand:");
-        h = s.nextInt();
+        hand = s.nextInt();
         System.out.println("Enter the face:");
-        f = s.nextInt();
+        face = s.nextInt();
+        System.out.println("Enter the location");
+
+        System.out.println("");
         System.out.println("Just wait...Female will be created in few second..!!");
+
+//        humanModel = new  HumanModel(legs,hand,face,location,gender);
+        System.out.println(humanModel.getFace());
     }
 
-    void femalerecord() {
-
+    void femalerecord(int lengs, int hand, int face, String location, String gender) {
+        this.legs = lengs;
+        this.hand = hand;
+        this.face = face;
+        this.location = location;
+        this.gender = gender;
     }
 }
 

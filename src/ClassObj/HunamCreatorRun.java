@@ -5,7 +5,12 @@ package ClassObj;
  */
 public class HunamCreatorRun {
     public static void main(String[] args) {
+
         HunamCreator human = new HunamCreator();
+
+
+      //  human.malerecord();
+      //  human.femalerecord();
     }
 
 
