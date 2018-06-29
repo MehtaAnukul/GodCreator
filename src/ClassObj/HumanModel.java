@@ -4,19 +4,32 @@ package ClassObj;
  * Created by Anukul-PC on 16-06-2018.
  */
 public class HumanModel {
-    public HumanModel(int legs, int hand, int face, String location, String gender) {
+    private String name;
+    private int legs;
+    private int hand;
+    private int face;
+    private String location;
+    private boolean gender;
+
+    public HumanModel(String name, int legs, int hand, int face, String location, boolean gender) {
+        this.name = name;
         this.legs = legs;
         this.hand = hand;
         this.face = face;
         this.location = location;
         this.gender = gender;
     }
+    public HumanModel(){
 
-    private int legs;
-    private int hand;
-    private int face;
-    private String location;
-    private String gender;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getLegs() {
         return legs;
@@ -50,11 +63,11 @@ public class HumanModel {
         this.location = location;
     }
 
-    public String getGender() {
+    public boolean isGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(boolean gender) {
         this.gender = gender;
     }
 }

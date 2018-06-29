@@ -3,7 +3,7 @@ package ClassObj;
 /**
  * Created by Anukul-PC on 02-06-2018.
  */
-public class Person {
+public class PersonModel {
 
     private int personLeg;
     private int personHand;
@@ -11,7 +11,10 @@ public class Person {
     private String personLocation;
     private String personGender;
 
-    public Person(int personLeg, int personHand, int personFace, String personLocation, String personGender) {
+    public PersonModel() {
+    }
+
+    public PersonModel(int personLeg, int personHand, int personFace, String personLocation, String personGender) {
         this.personLeg = personLeg;
         this.personHand = personHand;
         this.personFace = personFace;
@@ -19,9 +22,9 @@ public class Person {
         this.personGender = personGender;
     }
 
-    Person() {
-
-    }
+//    PersonModel() {
+//
+//    }
 
     public int getPersonLeg() {
         return personLeg;

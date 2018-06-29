@@ -7,12 +7,12 @@ public class ArrStr {
     public static void main(String[] args) {
 
 
-        Person mimoh = new Person(2, 2, 1, "Ahmedabad", "Male");
+        PersonModel mimoh = new PersonModel(2, 2, 1, "Ahmedabad", "Male");
 
-        Person kodee = new Person(2, 4, 5, "Chennai", "Female");
+        PersonModel kodee = new PersonModel(2, 4, 5, "Chennai", "Female");
 
 
-        Person anukul = new Person();
+        PersonModel anukul = new PersonModel();
         anukul.setPersonLeg(2);
         anukul.setPersonHand(2);
         anukul.setPersonFace(1);
@@ -20,14 +20,14 @@ public class ArrStr {
         anukul.setPersonGender("Male");
 
 
-        Person[] people = new Person[2];
+        PersonModel[] people = new PersonModel[2];
 
 
         people[0] = mimoh;
         people[1] = kodee;
         System.out.println(mimoh);
 
-        for (Person aPeople : people) {
+        for (PersonModel aPeople : people) {
             System.out.println(aPeople.getPersonGender() + " | " + aPeople.getPersonLocation());
         }
 
