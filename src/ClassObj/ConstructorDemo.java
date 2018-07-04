@@ -1,7 +1,5 @@
 package ClassObj;
 
-import javax.naming.ldap.Control;
-
 /**
  * Created by Anukul-PC on 26-06-2018.
  */

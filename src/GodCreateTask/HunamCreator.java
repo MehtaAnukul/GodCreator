@@ -1,4 +1,4 @@
-package ClassObj;
+package GodCreateTask;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -172,7 +172,7 @@ public class HunamCreator {
         System.out.println("");
         System.out.println("Just Wait...Hunam will be created in few second..!!");
 
-        humanModelArrayList.add(new HumanModel(name, legs, hand, face, location, b));
+        humanModelArrayList.add(new sHumanModel(name, legs, hand, face, location, b));
         choice();
 
     }

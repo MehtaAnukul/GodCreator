@@ -2,8 +2,6 @@ package com.second;
 
 import ClassObj.AccessModifier;
 
-import java.util.ArrayList;
-
 /**
  * Created by Anukul-PC on 26-06-2018.
  */
