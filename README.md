@@ -1,2 +1,2 @@
 # GodCreator
-![Screenshot](https://www.tivix.com/api/images/PZ-hTIMBZHE9A1ufI6I_48FIRrs=/263/original/d-logo.png | width=100)
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
